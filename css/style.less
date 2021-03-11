@@ -1,0 +1,26 @@
+@import "_variable.less";
+*{
+    margin: 0;
+    padding: 0;
+}
+.style-text (@fontFamily, @fontSize, @fontWeight, @color) {
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    color: @color;
+}
+.simple-style-text (@fontSize, @fontWeight, @color) {
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    color: @color;
+}
+body{
+    background: @bgColor;
+    width: 100%;
+    @import "_header.less";
+    @import "_main.less";
+    @import "_footer.less";
+    @import "_responsive.less";
+}
+
+

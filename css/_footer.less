@@ -1,0 +1,105 @@
+
+footer{
+    background: #333;
+    height: 420px;
+    padding-top: 64px;
+    padding-left: 360px;
+    padding-right: 360px;
+    margin-top: 8px;
+    .top-footer{
+        height: 190px;
+        ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin-top: 86px;
+            margin-right: 70px;
+            padding-left: 124px;
+            li{
+                text-align: center;
+                a{
+                    font-family: @fontContent;
+                    font-weight: bold;
+                    color: #ababab;
+                    text-decoration: none;
+                    &:hover{
+                        color: #d6ba8d;
+                    }
+                    font-size: 14px;
+                    padding-right: 41px;
+                }
+            }
+        }
+        .mail-sending{
+            .subcribe{
+                margin-top: 88px;
+                text-align: right;
+                a{
+                    padding: 10px;
+                    padding-right: 20px;
+                    border: 1px solid #ababab;
+                    text-decoration: none;
+                    .simple-style-text(13px, normal,  #d6ba8d);
+                    span{
+                        padding: 15px;
+                        .simple-style-text(inherit, bold, #abab);
+                    }
+                    &:hover{
+                        background-color: #d6ba8d;
+                        border-color: #d6ba8d;
+                        span{
+                            .simple-style-text(inherit, bold, #333);
+                        }
+                        svg{
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .line{
+        border-top: 1px solid #2b2b2b;
+    }
+    .bottom-footer{
+        margin-top: 28px;
+        .contact{
+            span{
+                .style-text(@fontContent, 14px, normal, #abab);
+                &:first-child{
+                    line-height: 40px;
+                    
+                }
+            }
+        }
+        .social{
+            ul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li{
+                    width: 50px;
+                    line-height: 46px;
+                    max-height: 50px;
+                    margin-left: 8px;
+                    text-align: center;
+                    border: 1px solid #4d4d4d;
+                    border-radius: 50%;
+                    a{
+                        color: #ababab;
+                    }
+                    &:hover{
+                        background-color: #d6ba8d;
+                        border-color: #d6ba8d;
+                        a{
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
